@@ -1,59 +1,291 @@
 <!doctype html>
-<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mustafa Eren KOÇ — Yazılım Mühendisi · Mobil, Backend ve Veri Ürünleri</title>
-<meta name="description" content="İTÜ Bilgisayar Mühendisliği mezunuyum (2026). Uçtan uca ürün geliştiriyorum: native iOS ve Android uygulamaları, Python/FastAPI tabanlı backend&#x27;ler ve bunl">
-<link rel="alternate" hreflang="en" href="../">
+<html lang="tr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mustafa Eren KOÇ · Bilgisayar Mühendisi</title>
+<meta name="description" content="Native mobil uygulamalar, backend servisleri ve veri ürünleri geliştiren Bilgisayar Mühendisi; Klaris, Hocam Kim? ve TRBio. İTÜ Bilgisayar Mühendisliği, 2026.">
+<link rel="canonical" href="https://mustafaerenkoc44.github.io/tr/">
+<link rel="alternate" hreflang="en" href="https://mustafaerenkoc44.github.io/"><link rel="alternate" hreflang="tr" href="https://mustafaerenkoc44.github.io/tr/"><link rel="alternate" hreflang="x-default" href="https://mustafaerenkoc44.github.io/">
+<meta property="og:type" content="profile"><meta property="og:title" content="Mustafa Eren KOÇ · Bilgisayar Mühendisi"><meta property="og:description" content="Native mobil uygulamalar, backend servisleri ve veri ürünleri geliştiren Bilgisayar Mühendisi; Klaris, Hocam Kim? ve TRBio. İTÜ Bilgisayar Mühendisliği, 2026.">
+<meta property="og:url" content="https://mustafaerenkoc44.github.io/tr/"><meta property="og:locale" content="tr_TR">
+<meta property="og:image" content="https://mustafaerenkoc44.github.io/assets/social-tr.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mustafa Eren KOÇ, Bilgisayar Mühendisi"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f7f7f4" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0c1016" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon-96.png" sizes="96x96" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap">
 <style>
-:root{--bg:#ffffff;--fg:#1b1f24;--muted:#5b6470;--card:#f5f7fa;--line:#dde3ea;--accent:#1f3a5f;--chip:#e8eef6}
-@media (prefers-color-scheme:dark){:root{--bg:#0f141b;--fg:#e7ebf0;--muted:#9aa5b1;--card:#161d26;--line:#263241;--accent:#8fb3e0;--chip:#1c2735}}
-*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
-a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
-.wrap{max-width:960px;margin:0 auto;padding:0 20px}
-header.hero{padding:56px 0 28px;border-bottom:1px solid var(--line)}
-.lang{float:right;font-size:14px;border:1px solid var(--line);border-radius:999px;padding:4px 12px}
-h1{font-size:40px;line-height:1.1;margin:0 0 6px;letter-spacing:-.02em}
-.headline{font-size:19px;color:var(--muted);margin:0 0 16px}
-.summary{max-width:760px;margin:0 0 20px}
-.actions{display:flex;flex-wrap:wrap;gap:10px}
-.btn{display:inline-block;padding:9px 16px;border-radius:8px;border:1px solid var(--line);font-weight:600;font-size:15px}
-.btn.primary{background:var(--accent);color:var(--bg);border-color:var(--accent)}
-section{padding:34px 0;border-bottom:1px solid var(--line)}
-h2{font-size:14px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:0 0 18px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column}
-.card h3{margin:0 0 2px;font-size:20px}.card .role{color:var(--muted);font-size:14px;margin:0 0 10px}
-.card p{margin:0 0 10px;font-size:15px}.card ul{margin:0 0 12px;padding-left:18px;font-size:14.5px}
-.card .more{margin-top:auto;font-weight:600;font-size:15px}
-.card .support{font-size:13.5px;color:var(--muted);margin:0 0 12px}
-.stats{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
-.stat{background:var(--chip);border-radius:999px;padding:3px 10px;font-size:13px;font-weight:600}
-.item{display:grid;grid-template-columns:1fr auto;gap:2px 16px;margin:0 0 18px}
-.item h3{margin:0;font-size:17px}.item .when{color:var(--muted);font-size:14px;white-space:nowrap}
-.item .sub{grid-column:1/-1;color:var(--muted);font-size:14.5px}
-.item ul{grid-column:1/-1;margin:6px 0 0;padding-left:18px;font-size:15px}
-.pubs li{margin:0 0 8px}.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{background:var(--chip);border-radius:8px;padding:5px 10px;font-size:14px}
-footer{padding:28px 0 48px;color:var(--muted);font-size:14px}
-@media (max-width:600px){h1{font-size:31px}.headline{font-size:17px}.item{grid-template-columns:1fr}.item .when{white-space:normal}}
-</style></head><body>
-<header class="hero"><div class="wrap">
-<a class="lang" href="../">English</a>
-<h1>Mustafa Eren KOÇ</h1><p class="headline">Yazılım Mühendisi · Mobil, Backend ve Veri Ürünleri</p><p class="summary">İTÜ Bilgisayar Mühendisliği mezunuyum (2026). Uçtan uca ürün geliştiriyorum: native iOS ve Android uygulamaları, Python/FastAPI tabanlı backend&#x27;ler ve bunları besleyen veri hatları. Klaris&#x27;i (700.000&#x27;den fazla ürünlük kozmetik içerik analizi uygulaması), Hocam Kim?&#x27;i (Türkiye&#x27;deki 184.668 akademisyeni yaklaşık 4,9 milyon yayın üzerinden şeffaf biçimde sıralayan rehber) ve TRBio&#x27;yu (biyoinformatik araştırma portalı; ilk yazarı olduğum iki makale hazırlık aşamasında) geliştirdim. Bir bankada iki buçuk yıllık yarı zamanlı BT denetimi deneyimim ve işletme alanında ikinci bir lisans diplomam var.</p>
+:root{
+  --bg:#f7f7f4;--surface:#fff;--surface-2:#f1f3f6;--text:#151a22;--text-2:#323a46;--muted:#596273;--faint:#626b78;
+  --line:#e3e6eb;--line-strong:#cfd5dd;--accent:#1d4f91;--accent-strong:#163c6f;--accent-soft:#e9f0fa;
+  --accent-fill:#1d4f91;--on-accent:#fff;
+  --shadow:0 1px 2px rgba(16,24,40,.04),0 6px 18px rgba(16,24,40,.05);
+  --radius:14px;--maxw:1080px;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0c1016;--surface:#131922;--surface-2:#1a212c;--text:#e8edf3;--text-2:#cdd5df;--muted:#9da9b7;--faint:#8792a1;
+  --line:#242e3b;--line-strong:#334050;--accent:#8db8ff;--accent-strong:#b3cfff;--accent-soft:#16253b;
+  --accent-fill:#8db8ff;--on-accent:#0c1016;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 10px 26px rgba(0,0,0,.26);
+}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.62 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%}
+a{color:var(--accent);text-decoration:none}
+main a:not(.btn),footer a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.22em;
+  text-decoration-color:color-mix(in srgb,currentColor 38%,transparent)}
+main a:not(.btn):hover,footer a:hover{text-decoration-color:currentColor}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+::selection{background:var(--accent-soft)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+.skip{position:absolute;left:-9999px;top:10px}
+.skip:focus{left:16px;z-index:100;background:var(--surface);color:var(--text);padding:10px 14px;border-radius:8px;box-shadow:var(--shadow)}
+svg{flex-shrink:0}
+main:focus{outline:none}
+
+.topbar{position:sticky;top:0;z-index:50;background:var(--bg);background:color-mix(in srgb,var(--bg) 86%,transparent);
+  -webkit-backdrop-filter:saturate(1.4) blur(12px);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:16px;min-height:62px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--text);font-weight:600;letter-spacing:-.01em;white-space:nowrap}
+.mono{width:30px;height:30px;border-radius:8px;background:var(--accent-fill);color:var(--on-accent);display:grid;place-items:center;
+  font:600 13px/1 var(--serif);letter-spacing:.02em}
+.nav{display:flex;flex-wrap:wrap;gap:2px;margin-left:auto}
+.nav a{color:var(--muted);font-size:14px;font-weight:500;padding:8px 11px;border-radius:8px;white-space:nowrap}
+.nav a:hover{color:var(--text);background:var(--surface-2)}
+.lang{display:inline-flex;align-items:center;min-height:36px;font-size:13px;font-weight:600;color:var(--text);
+  border:1px solid var(--line);border-radius:999px;padding:0 14px;white-space:nowrap}
+.lang:hover{border-color:var(--line-strong);background:var(--surface)}
+
+.hero{padding:72px 0 64px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:56px;align-items:center}
+.eyebrow{margin:0;font-size:13px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+h1{font:600 clamp(40px,6vw,64px)/1.05 var(--serif);letter-spacing:-.022em;margin:12px 0 18px;text-wrap:balance}
+.lead{font-size:clamp(17.5px,1.9vw,19.5px);line-height:1.55;color:var(--text-2);max-width:40em;margin:0 0 18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 22px;color:var(--muted);font-size:14.5px;margin:0 0 10px}
+.meta span{display:inline-flex;align-items:center;gap:7px;min-width:0;overflow-wrap:anywhere}
+.meta svg{width:17px;height:17px;color:var(--faint)}
+.interest{color:var(--muted);font-size:14.5px;margin:0 0 26px;max-width:40em}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:0 18px;border-radius:10px;
+  border:1px solid var(--line-strong);background:var(--surface);color:var(--text);font-weight:600;font-size:15px;
+  transition:border-color .15s,background-color .15s}
+.btn:hover{border-color:var(--faint)}
+.btn.primary{background:var(--accent-fill);border-color:var(--accent-fill);color:var(--on-accent)}
+.btn.primary:hover{background:var(--accent-strong);border-color:var(--accent-strong)}
+.btn svg{width:18px;height:18px}
+.btn small{font-weight:500;font-size:12px}
+.textlinks{display:inline-flex;flex-wrap:wrap;gap:6px 18px;margin-left:6px;font-size:15px;font-weight:600}
+.portrait{display:block;width:200px;height:200px;border-radius:50%;object-fit:cover;background:#fff;
+  box-shadow:0 0 0 6px var(--surface),0 0 0 7px var(--line),var(--shadow)}
+
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden;margin:56px 0 0;box-shadow:var(--shadow)}
+.metric{background:var(--surface);padding:20px 22px;min-width:0}
+.metric b{display:block;font:600 30px/1.1 var(--serif);letter-spacing:-.015em;font-variant-numeric:lining-nums tabular-nums}
+.metric span{display:block;color:var(--muted);font-size:13.5px;line-height:1.4;margin-top:6px}
+
+section.block{padding:64px 0;border-top:1px solid var(--line)}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:28px}
+.kicker{font-size:12.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}
+.sec-head h2{font:600 clamp(28px,3.4vw,34px)/1.15 var(--serif);letter-spacing:-.015em;margin:0}
+.sec-head .sub{margin:0;color:var(--muted);font-size:15px;max-width:420px;text-align:right}
+
+.projects{border-top:1px solid var(--line)}
+.project{display:grid;grid-template-columns:250px minmax(0,1fr);gap:40px;padding:32px 0;border-bottom:1px solid var(--line)}
+.project > *{min-width:0}
+.project-id{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.logo{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;font:600 19px/1 var(--serif);color:#fff;flex-shrink:0}
+.project h3{margin:0;font:600 22px/1.2 var(--serif);letter-spacing:-.01em}
+.project .sub{font-size:13.5px;color:var(--muted);line-height:1.35;margin-top:3px}
+.project .role{font-size:14px;font-weight:600;margin:0 0 2px;line-height:1.45}
+.project .when{font-size:14px;color:var(--muted);margin:0 0 12px}
+.more{display:inline-flex;align-items:center;gap:5px;font-weight:600;font-size:14.5px}
+.more svg{width:15px;height:15px}
+.project .desc{margin:0 0 14px;font-size:16px}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.badge{font-size:12.5px;font-weight:600;color:var(--text-2);background:var(--surface-2);border:1px solid var(--line);
+  padding:3px 10px;border-radius:999px;font-variant-numeric:lining-nums tabular-nums}
+.project ul{margin:0 0 12px;padding-left:18px;font-size:15px;max-width:70ch}
+.project li{margin:6px 0}
+.project li::marker,.tl li::marker{color:var(--faint)}
+.support{font-size:13.5px;color:var(--muted);margin:0 0 10px}
+.stack{font-size:13.5px;color:var(--muted);margin:0}
+
+.research{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:40px;align-items:start}
+.research h3{margin:0 0 12px;font:600 19px/1.3 var(--serif);letter-spacing:-.01em}
+.interests{list-style:none;margin:0 0 32px;padding:0}
+.interests li{padding:9px 0;border-top:1px solid var(--line);font-size:15.5px}
+.interests li:last-child{border-bottom:1px solid var(--line)}
+.pubs{list-style:none;margin:0;padding:0}
+.pubs li{padding:14px 0;border-top:1px solid var(--line)}
+.pubs li:first-child{border-top:0;padding-top:2px}
+.pubs .t{display:block;font:600 17px/1.4 var(--serif);letter-spacing:-.008em}
+.pubs .a{display:block;color:var(--muted);font-size:14px;margin-top:5px}
+.pubs .a strong{color:var(--text-2);font-weight:600}
+.status{display:inline-block;font-size:12px;font-weight:600;color:var(--text-2);background:var(--surface-2);
+  border:1px solid var(--line);padding:1px 9px;border-radius:999px;margin-right:8px}
+.side{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.side p{margin:0 0 16px;font-size:15px;color:var(--text-2)}
+.links{display:flex;flex-direction:column;gap:12px}
+.links a{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14.5px;overflow-wrap:anywhere}
+.links svg{width:16px;height:16px}
+
+.timeline{margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.tl{display:grid;grid-template-columns:13rem minmax(0,1fr);gap:28px;padding:24px 0;border-bottom:1px solid var(--line)}
+.tl > *{min-width:0}
+.tl .when{color:var(--muted);font-size:14px;padding-top:3px}
+.tl h3{margin:0;font-size:17.5px;letter-spacing:-.005em;line-height:1.35}
+.tl .org{color:var(--muted);font-size:14.5px;margin:3px 0 10px}
+.tl ul{margin:0;padding-left:18px;font-size:15px;max-width:72ch;list-style:disc}
+.tl li{margin:5px 0}
+
+.degrees{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.degree{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;min-width:0}
+.degree h3{margin:0 0 4px;font:600 19px/1.3 var(--serif);letter-spacing:-.01em}
+.degree .muted{color:var(--muted);font-size:14px}
+.degree p{margin:10px 0 0;font-size:15px}
+.program{margin:16px 0 0;font-size:14.5px;color:var(--text-2)}
+.program span{color:var(--muted)}
+.subsec{margin:52px 0 6px}
+.subsec h3{margin:0;font:600 24px/1.25 var(--serif);letter-spacing:-.012em}
+.courses{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:40px}
+.course{padding:18px 0;border-top:1px solid var(--line);min-width:0}
+.course h4{margin:0 0 3px;font-size:16px;font-weight:600;line-height:1.4}
+.course .muted{color:var(--muted);font-size:13.5px}
+.course p{margin:8px 0 0;font-size:14.5px;color:var(--text-2)}
+.course a.code{display:inline-flex;align-items:center;gap:5px;margin-top:10px;font-weight:600;font-size:14px}
+.course a.code svg{width:14px;height:14px}
+
+.skills{border-top:1px solid var(--line)}
+.skill{display:grid;grid-template-columns:13rem minmax(0,1fr);gap:28px;padding:16px 0;border-bottom:1px solid var(--line)}
+.skill h3{margin:0;font-size:14.5px;font-weight:600;color:var(--muted);line-height:1.65}
+.skill p{margin:0;font-size:15.5px;max-width:72ch}
+
+.contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:32px;align-items:center;background:var(--surface);
+  border:1px solid var(--line);border-radius:20px;padding:40px;box-shadow:var(--shadow)}
+.contact h2{font:600 clamp(28px,3.4vw,34px)/1.15 var(--serif);margin:0 0 8px;letter-spacing:-.015em}
+.contact p{margin:0;color:var(--muted)}
+.big-email{display:inline-block;font:600 clamp(20px,2.6vw,26px)/1.3 var(--serif);letter-spacing:-.01em;overflow-wrap:anywhere}
+.contact-links{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:14px;font-size:14.5px;font-weight:600}
+footer{padding:28px 0 48px;color:var(--faint);font-size:13.5px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+footer a{color:var(--muted)}
+
+@media (max-width:980px){
+  html{scroll-padding-top:16px}
+  .topbar{position:static}
+  .topbar .wrap{flex-wrap:wrap;gap:0 12px;padding-top:10px;padding-bottom:6px}
+  .brand{margin-right:auto}
+  .nav{order:3;flex-basis:100%;margin:4px 0 0 -10px}
+  .nav a{padding:10px}
+  .hero-grid{gap:36px}
+  .project{grid-template-columns:200px minmax(0,1fr);gap:28px}
+  .research{grid-template-columns:minmax(0,1fr);gap:28px}
+  .contact{grid-template-columns:minmax(0,1fr);gap:20px}
+}
+@media (max-width:680px){
+  .wrap{padding:0 16px}
+  .hero{padding:32px 0 44px}
+  .hero-grid{grid-template-columns:minmax(0,1fr);gap:20px}
+  .portrait{order:-1;width:112px;height:112px;box-shadow:0 0 0 4px var(--surface),0 0 0 5px var(--line)}
+  h1{font-size:clamp(34px,10vw,44px)}
+  .actions{flex-direction:column;align-items:stretch}
+  .textlinks{margin:6px 0 0}
+  .metrics{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:36px}
+  .metric{padding:16px}
+  .metric b{font-size:24px}
+  section.block{padding:44px 0}
+  .sec-head{flex-direction:column;align-items:flex-start;gap:8px;margin-bottom:22px}
+  .sec-head .sub{text-align:left}
+  .project{grid-template-columns:minmax(0,1fr);gap:14px;padding:26px 0}
+  .tl,.skill{grid-template-columns:minmax(0,1fr);gap:4px}
+  .degrees,.courses{grid-template-columns:minmax(0,1fr)}
+  .subsec{margin-top:40px}
+  .contact{padding:24px}
+  footer .wrap{flex-direction:column;gap:6px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{
+  :root{color-scheme:light;--bg:#fff;--surface:#fff;--surface-2:#fff;--text:#000;--text-2:#111;--muted:#333;--faint:#555;
+    --line:#ccc;--line-strong:#bbb;--accent:#000;--accent-strong:#000;--accent-fill:#000;--on-accent:#fff;--shadow:none}
+  .topbar,.actions,.skip,.portrait{display:none!important}
+  body{font-size:10pt}
+  .wrap{max-width:none;padding:0}
+  .hero{padding:0 0 16pt}
+  section.block{padding:16pt 0}
+  .hero-grid,.project,.research,.degrees,.courses,.contact,.tl,.skill{grid-template-columns:minmax(0,1fr)}
+  .metrics,.contact,.side,.degree{box-shadow:none}
+  .logo{background:#fff!important;color:#000;border:1px solid #ccc}
+  .sec-head,h2,h3,h4{break-after:avoid}
+  .project,.tl,.course,.pubs li{break-inside:avoid}
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Mustafa Eren KOÇ", "url": "https://mustafaerenkoc44.github.io/", "image": "https://mustafaerenkoc44.github.io/assets/portrait-400.jpg", "jobTitle": "Bilgisayar Mühendisi", "email": "mailto:mustafaerenkoc@yahoo.com", "address": {"@type": "PostalAddress", "addressLocality": "Istanbul", "addressCountry": "TR"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Istanbul Technical University"}, {"@type": "CollegeOrUniversity", "name": "Anadolu University"}], "sameAs": ["https://linkedin.com/in/mustafaerenkoc", "https://github.com/mustafaerenkoc44"], "knowsAbout": ["iOS development", "Android development", "Backend engineering", "Data engineering", "Scientometrics"]}</script>
+</head>
+<body>
+<a class="skip" href="#main">İçeriğe Geç</a>
+<header class="topbar"><div class="wrap">
+<a class="brand" href="#top"><span class="mono" aria-hidden="true">MK</span>Mustafa Eren KOÇ</a>
+<nav class="nav" aria-label="Bölümler"><a href="#work">Projeler</a><a href="#research">Araştırma</a><a href="#experience">Deneyim</a><a href="#education">Eğitim</a><a href="#skills">Beceriler</a><a href="#contact">İletişim</a></nav>
+<a class="lang" href="../" hreflang="en" lang="en">English</a>
+</div></header>
+<main id="main" tabindex="-1">
+<section class="hero" id="top"><div class="wrap">
+<div class="hero-grid"><div>
+<p class="eyebrow">Bilgisayar Mühendisi</p>
+<h1>Mustafa Eren KOÇ</h1>
+<p class="lead">Native mobil uygulamalar, backend servisleri ve veri ürünleri geliştiriyorum. İstanbul Teknik Üniversitesi Bilgisayar Mühendisliği mezunuyum (2026).</p>
+<p class="meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>İstanbul, Türkiye</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:mustafaerenkoc@yahoo.com">mustafaerenkoc@yahoo.com</a></span></p>
+<p class="interest">Yazılım, veri ve yapay zekâ mühendisliği rollerine ve lisansüstü araştırmaya ilgi duyuyorum.</p>
 <div class="actions">
-<a class="btn primary" href="../cv/Mustafa_Eren_Koc_CV.pdf">Yazılım CV'si</a>
-<a class="btn" href="../cv/Mustafa_Eren_Koc_Academic_CV.pdf">Akademik CV (lisansüstü başvurular)</a>
-<a class="btn" href="https://linkedin.com/in/mustafaerenkoc">LinkedIn</a>
-<a class="btn" href="https://github.com/mustafaerenkoc44">GitHub</a>
-<a class="btn" href="mailto:mustafaerenkoc@yahoo.com">mustafaerenkoc@yahoo.com</a>
-</div></div></header>
-<main class="wrap">
-<section><h2>Ürünler</h2><div class="cards"><article class="card"><h3>Klaris</h3><p class="role">Kurucu ve Yazılım Mühendisi · Mart 2026 – Günümüz</p><div class="stats"><span class="stat">700.000+ ürün</span><span class="stat">iOS ve Android</span><span class="stat">16.000+ test</span></div><p>Türkiye pazarı için kozmetik içerik analizi uygulaması; Eylül 2026&#x27;dan beri App Store ve Google Play&#x27;de yayında.</p><ul><li>Ürünü tek başıma tasarlayıp geliştirdim ve yayına aldım: barkodu okutulan ürünün içerikleri sade Türkçeyle tek tek açıklanıyor ve gerekçesi açıkça gösterilen bir ürün puanı hesaplanıyor.</li><li>Uygulama içi abonelik içeren native iOS (Swift, SwiftUI, StoreKit) ve Android (Kotlin, Jetpack Compose, Google Play Billing, ML Kit ile barkod okuma) uygulamalarını geliştirdim.</li><li>700.000&#x27;den fazla ürünlük kataloğun arkasındaki Python veri hattını ve FastAPI, PostgreSQL ve Redis tabanlı backend&#x27;i kurdum; içerik normalizasyonu ve otomatik kalite kapıları ekledim. Sistemi Docker, Nginx ve CI/CD ile kendi yönettiğim bir Linux sunucuda çalıştırıyorum.</li></ul><p class="support">Microsoft for Startups (Azure kredisi) ve OVHcloud Startup Program (10.000 EUR kredi) tarafından destekleniyor; dış yatırım almadan öz kaynakla büyüyor.</p><a class="more" href="https://klaris.com.tr">Siteye git: klaris.com.tr →</a></article><article class="card"><h3>Hocam Kim?</h3><p class="role">Kurucu ve Yazılım Mühendisi · Bağımsız ve Kamuya Açık Proje · Ekim 2026 – Günümüz</p><div class="stats"><span class="stat">184.668 akademisyen</span><span class="stat">4,9 milyon yayın</span><span class="stat">209 kurum</span></div><p>Türkiye&#x27;deki akademisyenler için ücretsiz ve şeffaf bir rehber ve alan içi sıralama.</p><ul><li>209 kurumda ve 2.312 alt alanda 184.668 akademisyeni kapsayan, yaklaşık 4,9 milyon tekilleştirilmiş yayının Meilisearch ile aranabildiği kamuya açık bir rehber geliştirdim.</li><li>Sekiz bileşenli, sürümlü ve açık bir puanlama yöntemi tasarladım; bileşenler arasında SCImago Journal Rank (SJR) çeyreğiyle ağırlıklandırılmış yayınlar, atıf yüzdelikleri, fonlu projeler, tez danışmanlıkları, uluslararası iş birlikleri ve patentler var. Puanlar her gün yeniden hesaplanıyor ve her akademisyen kendi alanında karşılaştırılıyor.</li><li>Bu 184.668 akademisyenin 111.000&#x27;den fazlasını ORCID ve ortak DOI&#x27;ler üzerinden OpenAlex yazar kayıtlarıyla eşleştirdim. Teknolojiler: Python, FastAPI, Jinja2, MongoDB, Meilisearch, Cloudflare Tunnel; 3.800&#x27;den fazla otomatik test.</li></ul><a class="more" href="https://hocamkim.com">Siteye git: hocamkim.com →</a></article><article class="card"><h3>TRBio — Türkiye Biyoinformatik Portalı</h3><p class="role">Kurucu Ortak ve Yazılım Mühendisi · Eylül 2025 – Günümüz</p><div class="stats"><span class="stat">264 araştırmacı</span><span class="stat">99 üniversite</span><span class="stat">Hazırlıkta 2 makale</span></div><p>İTÜ bitirme projesi: Türkiye biyoinformatik araştırma topluluğunun küratörlü bilgi tabanı; Naya Şahin ile birlikte, Prof. Dr. Ali Çakmak danışmanlığında.</p><ul><li>Ulusal akademik kayıtları katı, ORCID tabanlı eşleştirmeyle OpenAlex&#x27;e bağlayan kimlik eşleştirme, ana veri, puanlama ve portal katmanlarını geliştirdim (Python, FastAPI, MongoDB, D3.js).</li><li>99 üniversiteden 264 araştırmacıyı, yerel bir LLM (Ollama) ile etiketlenen 21 küratörlü araştırma alanında topladım; ortak yazarlık ağı ve 2020 sonrasında kurulan iş birlikleri üzerinde geriye dönük doğrulamada ROC-AUC 0,80&#x27;e ulaşan bir iş birliği öneri sistemi geliştirdim.</li><li>Hazırlık aşamasındaki iki makalenin ilk yazarıyım (hedef dergiler: Briefings in Bioinformatics, Database); bitirme projesi iki dönemde de AA ile tamamlandı.</li></ul><a class="more" href="https://trbio.info">Siteye git: trbio.info →</a></article></div></section>
-<section><h2>Araştırma</h2><p><strong>Araştırma ilgi alanları:</strong> Bilimetri ve bilim bilimi · akademik veriler için veri madenciliği ve doğal dil işleme · araştırma bilgi sistemleri ve açık araştırma verisi</p><ol class="pubs"><li><strong>Koç, M. E.</strong>, &amp; Çakmak, A. Mapping Bioinformatics in Türkiye: A Network-Based Review of Researchers, Institutions and Research Themes. <em>Hazırlık aşamasında; hedef dergi: Briefings in Bioinformatics.</em></li><li><strong>Koç, M. E.</strong>, &amp; Çakmak, A. TRBio: A Curated Knowledge Base and Network Resource for the Bioinformatics Research Community in Türkiye. <em>Hazırlık aşamasında; hedef dergi: Database (Oxford).</em></li></ol><ul class="pubs"><li><strong>Veri ve kod:</strong> TRBio 1.0: de-identified co-authorship network, aggregate results and analysis code for “Mapping Bioinformatics in Türkiye” and “TRBio” (Version 1.0). Zenodo. <a href="https://doi.org/10.5281/zenodo.24208634">doi.org/10.5281/zenodo.24208634</a> · <a href="https://github.com/mustafaerenkoc44/mapping-bioinformatics-turkiye">github.com/mustafaerenkoc44/mapping-bioinformatics-turkiye</a></li></ul></section>
-<section><h2>Deneyim</h2><div class="item"><h3>BT Denetçisi (Yarı Zamanlı) — Kuveyt Türk Katılım Bankası</h3><span class="when">Ocak 2024 – Haziran 2026</span><div class="sub">Teftiş Kurulu · Bilgi Sistemleri Denetimleri · Kocaeli</div><ul><li>Erişim yönetimi, değişiklik yönetimi, yedekleme ve iş sürekliliği gibi BT genel kontrollerini BDDK bilgi sistemleri mevzuatına ve KVKK&#x27;ya göre denetledim; bulguları kriter, kanıt, neden ve etki yapısında raporladım.</li><li>Türkiye&#x27;nin önde gelen 10 bankasının mobil bankacılık uygulamalarını beş başlıkta (mağaza puanları ve sürümler, ilk kullanım, giriş güvenliği, müşteri edinimi, para transferi) karşılaştıran 26 sayfalık bir denetim raporu hazırladım.</li></ul></div><div class="item"><h3>Yapay Zekâ Eğitmeni (Kodlama) · Serbest — Outlier</h3><span class="when">Aralık 2024 – Haziran 2026</span><div class="sub">Uzaktan</div><ul><li>Büyük dil modellerinin eğitimi için Python, C/C++ ve JavaScript/TypeScript&#x27;te zorlayıcı kodlama görevleri ve örnek çözümler yazdım; model cevaplarını doğruluk ve kaliteye göre puanlayıp sıraladım (RLHF).</li><li>Kalite kontrol rolünde diğer katkıcıların çalışmalarını inceleyip onayladım.</li></ul></div><div class="item"><h3>Yazılım Stajyeri — Arçelik</h3><span class="when">Ağustos – Eylül 2023</span><div class="sub">Dijital Üretim Sistemleri · Bolu Pişirici Cihazlar Fabrikası · Bolu</div><ul><li>Fabrika test verilerinin Excel&#x27;de takibinin yerini alması için full-stack bir web uygulaması (React, Node.js/Express, PostgreSQL) geliştirdim; backend ve frontend dahil baştan sona.</li><li>İlişkisel bir veritabanı şeması ve REST API üzerinde sekiz ekran geliştirdim: üretim hattı, istasyon, test ekipmanı, test tipi ve parametreleri, veri girişi, düzenleme ve raporlama.</li></ul></div><div class="item"><h3>Ağ ve Donanım Stajyeri — T.C. Gençlik ve Spor Bakanlığı</h3><span class="when">Temmuz 2023</span><div class="sub">Bilgi İşlem Dairesi · Ağ Yönetimi Şube Müdürlüğü · Ankara</div><ul><li>Cisco router ve switch&#x27;lerin kurulumunu ve yapılandırmasını (IP adresleme, alt ağlar, güvenlik ayarları) kabin montajı ve kablolamayla birlikte yaptım; ağı kablo test cihazları ve Wireshark ile test edip arızaları giderdim.</li></ul></div></section>
-<section><h2>Eğitim</h2><div class="item"><h3>Bilgisayar Mühendisliği, Lisans (%100 İngilizce)</h3><span class="when">Temmuz 2026</span><div class="sub">İstanbul Teknik Üniversitesi · Bitirme projesi: TRBio, Biyoinformatik Topluluk Portalı (iki dönemde de AA); danışman Prof. Dr. Ali Çakmak · Lisans boyunca Kale Vakfı (KSV) bursiyeri</div></div><div class="item"><h3>İşletme, Lisans</h3><span class="when">Mayıs 2025</span><div class="sub">Anadolu Üniversitesi, İşletme Fakültesi · Onur derecesiyle mezuniyet</div></div><div class="item"><h3>Yaz İngilizce Programı</h3><span class="when">Yaz 2019</span><div class="sub">George Mason University</div></div></section>
-<section><h2>Ders projeleri</h2><div class="item"><h3>LLM ile kod ve test üretimi</h3><span class="when">BLG 475E Software Quality and Testing</span><div class="sub">30 HumanEval-X görevinde LLM&#x27;in ürettiği Java kodunu ve birim testlerini değerlendiren hattı kurdum: yerel llama.cpp çıkarımı, JUnit adaptörleri, JaCoCo dal kapsamı ve GitHub Actions üzerinde PITest mutasyon testi (iki kişilik ekip). <a href="https://github.com/mustafaerenkoc44/BLG-475E-Term-Project">Kod →</a></div></div><div class="item"><h3>Yerel Wikipedia RAG asistanı</h3><span class="when">BLG 483E AI Aided Computer Engineering</span><div class="sub">40 Wikipedia makalesi üzerinde tamamen yerelde çalışan RAG asistanı: cümle duyarlı parçalama, yerel embedding&#x27;ler, SQLite ve ChromaDB, Ollama üzerinden Llama 3.2 ve Streamlit sohbet arayüzü. <a href="https://github.com/mustafaerenkoc44/blg-483e-hw3-local-wikipedia-rag">Kod →</a></div></div><div class="item"><h3>Eşzamanlı web tarama aracı ve arama motoru</h3><span class="when">BLG 483E AI Aided Computer Engineering</span><div class="sub">İndeksleme sürerken arama yapılabilen, standart kütüphaneyle yazılmış Python web tarama aracı: derinlik sınırlı tarama, tekrar önleme, geri basınç kontrolü, kaldığı yerden devam eden SQLite (WAL) kuyruğu ve yerel kontrol paneli. <a href="https://github.com/mustafaerenkoc44/blg-483e-hw1">Kod →</a></div></div><div class="item"><h3>QueryCurious — dış ticaret analitiği</h3><span class="when">BLG 317E Database Systems</span><div class="sub">Flask ve MySQL tabanlı analitik uygulaması; 126 MB&#x27;lık ticaret verisini dokuz tabloluk şemaya yükleyen akış tabanlı ETL&#x27;i, yönetim panelini ve rota gezginini geliştirdim (beş kişilik ekip). <a href="https://github.com/mustafaerenkoc/QueryCurious">Kod →</a></div></div></section>
-<section><h2>Beceriler</h2><div class="chips"><span class="chip"><strong>Programlama:</strong> Python, Swift, Kotlin, TypeScript/JavaScript, SQL · ayrıca Java, C/C++</span><span class="chip"><strong>Backend ve veri:</strong> FastAPI, Flask, Node.js/Express, PostgreSQL, MongoDB, MySQL, Redis, Meilisearch, ETL hatları, pytest</span><span class="chip"><strong>Mobil ve web:</strong> SwiftUI, UIKit, StoreKit, Jetpack Compose, Google Play Billing, ML Kit, Next.js, React, D3.js, Playwright</span><span class="chip"><strong>Altyapı:</strong> Linux, Docker, Nginx, CI/CD, Cloudflare, systemd</span><span class="chip"><strong>Yapay zekâ ve LLM:</strong> LLM entegrasyonu ve değerlendirmesi, prompt mühendisliği, RAG (ChromaDB), yerel modeller (Ollama, llama.cpp), RLHF</span></div></section>
+<a class="btn primary" href="../cv/Mustafa_Eren_Koc_CV.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>Yazılım CV'si <small>PDF</small></a>
+<a class="btn" href="mailto:mustafaerenkoc@yahoo.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>E-posta</a>
+<span class="textlinks"><a href="../cv/Mustafa_Eren_Koc_Academic_CV.pdf">Akademik CV</a><a href="https://linkedin.com/in/mustafaerenkoc">LinkedIn</a><a href="https://github.com/mustafaerenkoc44">GitHub</a></span>
+</div></div>
+<img class="portrait" src="../assets/portrait-400.jpg" width="200" height="200" alt="Mustafa Eren KOÇ&#x27;un portresi" decoding="async">
+</div>
+<div class="metrics"><div class="metric"><b>700.000+</b><span>Ürün, Klaris Kataloğunda</span></div><div class="metric"><b>184.668</b><span>Akademisyen, Hocam Kim?&#x27;te</span></div><div class="metric"><b>~4,9 Milyon</b><span>Tekilleştirilmiş Yayın</span></div><div class="metric"><b>16.000+</b><span>Otomatik Test, Klaris&#x27;te</span></div></div>
+</div></section>
+
+<section class="block" id="work"><div class="wrap">
+<div class="sec-head"><div><p class="kicker">01</p><h2>Öne Çıkan Çalışmalar</h2></div><p class="sub">Uçtan uca tasarlayıp geliştirdiğim ve yönettiğim ürünler.</p></div>
+<div class="projects"><article class="project"><div class="project-summary"><div class="project-id"><span class="logo" style="background:#9a6b4f" aria-hidden="true">K</span><div><h3>Klaris</h3></div></div><p class="role">Kurucu ve Yazılım Mühendisi</p><p class="when">Mart 2026 – Günümüz</p><a class="more" href="https://klaris.com.tr" aria-label="Siteye Git: klaris.com.tr">klaris.com.tr <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a></div><div class="project-detail"><p class="desc">Türkiye pazarı için kozmetik içerik analizi uygulaması; Eylül 2026&#x27;dan beri App Store ve Google Play&#x27;de yayında.</p><div class="badges"><span class="badge">700.000+ Ürün</span><span class="badge">iOS ve Android</span><span class="badge">16.000+ Test</span></div><ul><li>Ürünü tek başıma tasarlayıp geliştirdim ve yayına aldım: barkodu okutulan ürünün içerikleri sade Türkçeyle tek tek açıklanıyor ve gerekçesi açıkça gösterilen bir ürün puanı hesaplanıyor.</li><li>Uygulama içi abonelik içeren native iOS (Swift, SwiftUI, StoreKit) ve Android (Kotlin, Jetpack Compose, Google Play Billing, ML Kit ile barkod okuma) uygulamalarını geliştirdim.</li><li>700.000&#x27;den fazla ürünlük kataloğun arkasındaki Python veri hattını ve FastAPI, PostgreSQL ve Redis tabanlı backend&#x27;i kurdum; içerik normalizasyonu ve otomatik kalite kapıları ekledim. Sistemi Docker, Nginx ve CI/CD ile kendi yönettiğim bir Linux sunucuda çalıştırıyorum.</li></ul><p class="support">Microsoft for Startups (Azure kredisi) ve OVHcloud Startup Program (10.000 EUR kredi) tarafından destekleniyor; dış yatırım almadan öz kaynakla büyüyor.</p><p class="stack">Swift · SwiftUI · Kotlin · Jetpack Compose · Python · FastAPI · PostgreSQL · Redis · Docker</p></div></article><article class="project"><div class="project-summary"><div class="project-id"><span class="logo" style="background:#1d4f91" aria-hidden="true">H</span><div><h3>Hocam Kim?</h3></div></div><p class="role">Kurucu ve Yazılım Mühendisi · Bağımsız ve Kamuya Açık Proje</p><p class="when">Ekim 2026 – Günümüz</p><a class="more" href="https://hocamkim.com" aria-label="Siteye Git: hocamkim.com">hocamkim.com <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a></div><div class="project-detail"><p class="desc">Türkiye&#x27;deki akademisyenler için ücretsiz ve şeffaf bir rehber ve alan içi sıralama.</p><div class="badges"><span class="badge">184.668 Akademisyen</span><span class="badge">4,9 Milyon Yayın</span><span class="badge">209 Kurum</span></div><ul><li>209 kurumda ve 2.312 alt alanda 184.668 akademisyeni kapsayan, yaklaşık 4,9 milyon tekilleştirilmiş yayının Meilisearch ile aranabildiği kamuya açık bir rehber geliştirdim.</li><li>Sekiz bileşenli, sürümlü ve açık bir puanlama yöntemi tasarladım; bileşenler arasında SCImago Journal Rank (SJR) çeyreğiyle ağırlıklandırılmış yayınlar, atıf yüzdelikleri, fonlu projeler, tez danışmanlıkları, uluslararası iş birlikleri ve patentler var. Puanlar her gün yeniden hesaplanıyor ve her akademisyen kendi alanında karşılaştırılıyor.</li><li>Bu 184.668 akademisyenin 111.000&#x27;den fazlasını ORCID ve ortak DOI&#x27;ler üzerinden OpenAlex yazar kayıtlarıyla eşleştirdim. Teknolojiler: Python, FastAPI, Jinja2, MongoDB, Meilisearch, Cloudflare Tunnel; 3.800&#x27;den fazla otomatik test.</li></ul><p class="stack">Python · FastAPI · MongoDB · Meilisearch · OpenAlex</p></div></article><article class="project"><div class="project-summary"><div class="project-id"><span class="logo" style="background:#2f7d5c" aria-hidden="true">T</span><div><h3>TRBio</h3><div class="sub">Türkiye Biyoinformatik Portalı</div></div></div><p class="role">Kurucu Ortak ve Yazılım Mühendisi</p><p class="when">Eylül 2025 – Günümüz</p><a class="more" href="https://trbio.info" aria-label="Siteye Git: trbio.info">trbio.info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a></div><div class="project-detail"><p class="desc">İTÜ bitirme projesi: Türkiye biyoinformatik araştırma topluluğunun küratörlü bilgi tabanı; Naya Şahin ile birlikte, Prof. Dr. Ali Çakmak danışmanlığında.</p><div class="badges"><span class="badge">264 Araştırmacı</span><span class="badge">99 Üniversite</span><span class="badge">Hazırlıkta 2 Makale</span></div><ul><li>Ulusal akademik kayıtları katı, ORCID tabanlı eşleştirmeyle OpenAlex&#x27;e bağlayan kimlik eşleştirme, ana veri, puanlama ve portal katmanlarını geliştirdim (Python, FastAPI, MongoDB, D3.js).</li><li>99 üniversiteden 264 araştırmacıyı, yerel bir LLM (Ollama) ile etiketlenen 21 küratörlü araştırma alanında topladım; ortak yazarlık ağı ve 2020 sonrasında kurulan iş birlikleri üzerinde geriye dönük doğrulamada ROC-AUC 0,80&#x27;e ulaşan bir iş birliği öneri sistemi geliştirdim.</li><li>Hazırlık aşamasındaki iki makalenin ilk yazarıyım (hedef dergiler: Briefings in Bioinformatics, Database).</li></ul><p class="stack">Python · FastAPI · MongoDB · D3.js · Ollama · OpenAlex</p></div></article></div>
+</div></section>
+
+<section class="block" id="research"><div class="wrap">
+<div class="sec-head"><div><p class="kicker">02</p><h2>Araştırma</h2></div></div>
+<div class="research"><div><h3>Araştırma İlgi Alanları</h3><ul class="interests"><li>Bilimetri ve Bilim Bilimi</li><li>Akademik Veriler için Veri Madenciliği ve Doğal Dil İşleme</li><li>Araştırma Bilgi Sistemleri ve Açık Araştırma Verisi</li></ul>
+<h3>Hazırlık Aşamasındaki Makaleler</h3><ol class="pubs"><li><span class="t"><span lang="en">Mapping Bioinformatics in Türkiye: A Network-Based Review of Researchers, Institutions and Research Themes</span></span><span class="a"><strong>Koç, M. E.</strong>, &amp; Çakmak, A.</span><span class="a"><span class="status">Hazırlıkta</span>Hedef Dergi: <span lang="en">Briefings in Bioinformatics</span></span></li><li><span class="t"><span lang="en">TRBio: A Curated Knowledge Base and Network Resource for the Bioinformatics Research Community in Türkiye</span></span><span class="a"><strong>Koç, M. E.</strong>, &amp; Çakmak, A.</span><span class="a"><span class="status">Hazırlıkta</span>Hedef Dergi: <span lang="en">Database (Oxford)</span></span></li></ol></div><aside class="side"><h3>Veri ve Kod</h3><p>TRBio 1.0: iki makalenin kimliksizleştirilmiş ortak yazarlık ağı, toplu sonuçları ve analiz kodu.</p><div class="links"><a href="https://doi.org/10.5281/zenodo.24208634"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>TRBio Veri Seti · Zenodo</a><a href="https://github.com/mustafaerenkoc44/mapping-bioinformatics-turkiye"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>Analiz Kodu · GitHub</a><a href="../cv/Mustafa_Eren_Koc_Academic_CV.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>Akademik CV · PDF</a></div></aside></div>
+</div></section>
+
+<section class="block" id="experience"><div class="wrap">
+<div class="sec-head"><div><p class="kicker">03</p><h2>Deneyim</h2></div></div>
+<ol class="timeline"><li class="tl"><div class="when">Ocak 2024 – Haziran 2026</div><div><h3>BT Denetçisi (Yarı Zamanlı)</h3><div class="org">Kuveyt Türk Katılım Bankası · Teftiş Kurulu · Bilgi Sistemleri Denetimleri · Kocaeli</div><ul><li>Erişim yönetimi, değişiklik yönetimi, yedekleme ve iş sürekliliği gibi BT genel kontrollerini BDDK bilgi sistemleri mevzuatına ve KVKK&#x27;ya göre denetledim; bulguları kriter, kanıt, neden ve etki yapısında raporladım.</li><li>Türkiye&#x27;nin önde gelen 10 bankasının mobil bankacılık uygulamalarını beş başlıkta (mağaza puanları ve sürümler, ilk kullanım, giriş güvenliği, müşteri edinimi, para transferi) karşılaştıran 26 sayfalık bir denetim raporu hazırladım.</li><li>Şubeler, ATM&#x27;ler, web ve mobil kanallar, çağrı merkezi ve yönetişim için erişilebilirlik mevzuatına uyumu ölçen, risk dereceli ve 20&#x27;den fazla testten oluşan bir denetim programı tasarladım.</li></ul></div></li><li class="tl"><div class="when">Aralık 2024 – Haziran 2026</div><div><h3>Yapay Zekâ Eğitmeni (Kodlama) · Serbest</h3><div class="org">Outlier · Uzaktan</div><ul><li>Büyük dil modellerinin eğitimi için Python, C/C++ ve JavaScript/TypeScript&#x27;te zorlayıcı kodlama görevleri ve örnek çözümler yazdım; model cevaplarını doğruluk ve kaliteye göre puanlayıp sıraladım (RLHF).</li><li>Kalite kontrol rolünde diğer katkıcıların çalışmalarını inceleyip onayladım.</li></ul></div></li><li class="tl"><div class="when">Ağustos – Eylül 2023</div><div><h3>Yazılım Stajyeri</h3><div class="org">Arçelik · Dijital Üretim Sistemleri · Bolu Pişirici Cihazlar Fabrikası · Bolu</div><ul><li>Fabrika test verilerinin Excel&#x27;de takibinin yerini alması için full-stack bir web uygulaması (React, Node.js/Express, PostgreSQL) geliştirdim; backend ve frontend dahil baştan sona.</li></ul></div></li><li class="tl"><div class="when">Temmuz 2023</div><div><h3>Ağ ve Donanım Stajyeri</h3><div class="org">T.C. Gençlik ve Spor Bakanlığı · Bilgi İşlem Dairesi · Ağ Yönetimi Şube Müdürlüğü · Ankara</div><ul><li>Cisco router ve switch&#x27;lerin kurulumunu ve yapılandırmasını (IP adresleme, alt ağlar, güvenlik ayarları) kabin montajı ve kablolamayla birlikte yaptım; ağı kablo test cihazları ve Wireshark ile test edip arızaları giderdim.</li></ul></div></li></ol>
+</div></section>
+
+<section class="block" id="education"><div class="wrap">
+<div class="sec-head"><div><p class="kicker">04</p><h2>Eğitim</h2></div></div>
+<div class="degrees"><div class="degree"><h3>Bilgisayar Mühendisliği, Lisans (%100 İngilizce)</h3><div class="muted">İstanbul Teknik Üniversitesi · Temmuz 2026</div><p>Bitirme projesi: TRBio, Biyoinformatik Topluluk Portalı; danışman Prof. Dr. Ali Çakmak</p><p>Lisans boyunca Kale Vakfı (KSV) bursiyeri</p></div><div class="degree"><h3>İşletme, Lisans</h3><div class="muted">Anadolu Üniversitesi, İşletme Fakültesi · Mayıs 2025</div><p>Onur Derecesiyle Mezuniyet</p></div></div><p class="program"><strong>Yaz İngilizce Programı</strong> <span>· George Mason University · Yaz 2019</span></p>
+<div class="subsec"><h3>Ders Projeleri</h3></div>
+<div class="courses"><div class="course"><h4>LLM ile Kod ve Test Üretimi</h4><div class="muted"><span lang="en">BLG 475E Software Quality and Testing</span></div><p>30 HumanEval-X görevinde LLM&#x27;in ürettiği Java kodunu ve birim testlerini değerlendiren hattı kurdum: yerel llama.cpp çıkarımı, JUnit adaptörleri, JaCoCo dal kapsamı ve GitHub Actions üzerinde PITest mutasyon testi (iki kişilik ekip).</p><a class="code" href="https://github.com/mustafaerenkoc44/BLG-475E-Term-Project">Kaynak Kod <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a></div><div class="course"><h4>Yerel Wikipedia RAG Asistanı</h4><div class="muted"><span lang="en">BLG 483E AI Aided Computer Engineering</span></div><p>40 Wikipedia makalesi üzerinde tamamen yerelde çalışan RAG asistanı: cümle duyarlı parçalama, yerel embedding&#x27;ler, SQLite ve ChromaDB, Ollama üzerinden Llama 3.2 ve Streamlit sohbet arayüzü.</p><a class="code" href="https://github.com/mustafaerenkoc44/blg-483e-hw3-local-wikipedia-rag">Kaynak Kod <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a></div><div class="course"><h4>Eşzamanlı Web Tarama Aracı ve Arama Motoru</h4><div class="muted"><span lang="en">BLG 483E AI Aided Computer Engineering</span></div><p>İndeksleme sürerken arama yapılabilen, standart kütüphaneyle yazılmış Python web tarama aracı: derinlik sınırlı tarama, tekrar önleme, geri basınç kontrolü, kaldığı yerden devam eden SQLite (WAL) kuyruğu ve yerel kontrol paneli.</p><a class="code" href="https://github.com/mustafaerenkoc44/blg-483e-hw1">Kaynak Kod <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a></div><div class="course"><h4>QueryCurious — Dış Ticaret Analitiği</h4><div class="muted"><span lang="en">BLG 317E Database Systems</span></div><p>Flask ve MySQL tabanlı analitik uygulaması; 126 MB&#x27;lık ticaret verisini dokuz tabloluk şemaya yükleyen akış tabanlı ETL&#x27;i, yönetim panelini ve rota gezginini geliştirdim (beş kişilik ekip).</p><a class="code" href="https://github.com/mustafaerenkoc/QueryCurious">Kaynak Kod <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a></div></div>
+</div></section>
+
+<section class="block" id="skills"><div class="wrap">
+<div class="sec-head"><div><p class="kicker">05</p><h2>Beceriler</h2></div></div>
+<div class="skills"><div class="skill"><h3>Programlama</h3><p>Python, Swift, Kotlin, TypeScript/JavaScript, SQL · ayrıca Java, C/C++</p></div><div class="skill"><h3>Backend ve Veri</h3><p>FastAPI, Flask, Node.js/Express, PostgreSQL, MongoDB, MySQL, Redis, Meilisearch, ETL hatları, pytest</p></div><div class="skill"><h3>Yapay Zekâ ve LLM</h3><p>LLM entegrasyonu ve değerlendirmesi, prompt mühendisliği, RAG (ChromaDB), yerel modeller (Ollama, llama.cpp), RLHF</p></div><div class="skill"><h3>Mobil ve Web</h3><p>SwiftUI, UIKit, StoreKit, Jetpack Compose, Google Play Billing, ML Kit, Next.js, React, D3.js, Playwright</p></div><div class="skill"><h3>Altyapı</h3><p>Linux, Docker, Nginx, CI/CD, Cloudflare, systemd</p></div></div>
+</div></section>
+
+<section class="block" id="contact"><div class="wrap">
+<div class="contact"><div><h2>İletişim</h2><p>Bana en hızlı e-postayla ulaşabilirsiniz.</p></div>
+<div><a class="big-email" href="mailto:mustafaerenkoc@yahoo.com">mustafaerenkoc@yahoo.com</a>
+<div class="contact-links"><a href="../cv/Mustafa_Eren_Koc_CV.pdf">Yazılım CV'si · PDF</a><a href="../cv/Mustafa_Eren_Koc_Academic_CV.pdf">Akademik CV · PDF</a><a href="https://linkedin.com/in/mustafaerenkoc">LinkedIn</a><a href="https://github.com/mustafaerenkoc44">GitHub</a></div></div></div>
+</div></section>
 </main>
-<footer class="wrap">© 2026 Mustafa Eren KOÇ · Son güncelleme: 2026-11-14 · İletişim: <a href="mailto:mustafaerenkoc@yahoo.com">mustafaerenkoc@yahoo.com</a></footer>
+<footer><div class="wrap"><span>© 2026 Mustafa Eren KOÇ</span><span>Son Güncelleme: 14 Kasım 2026</span>
+<a href="../" hreflang="en" lang="en">English</a></div></footer>
 </body></html>
